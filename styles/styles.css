@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.userform {
+  margin-left: 112px;
+  margin-top: 112px;
+  position: relative;
+  display: flex;
+}
+
+.userform__text {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 96px;
+  color: #7D98F7;
+  transform: rotate(-45deg);
+  margin-top: 234px;
+  margin-left: 155px;
+}
+
+.userform__avatar {
+  margin-right: 176px;
+}
+
+.userform__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.userform__form__form-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userform__form-label {
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.userform__form-field {
+  background: #F8F8F8;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 15px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000000;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.userform__form-field:hover {
+  border-color: #000000
+}
+.userform__form-field:focus {
+  background: #dcdcdc;
+}
+
+.userform__form-field:active {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.userform__form-field:focus:invalid {
+  border-color: #FF3D3D;
+}
+
+.userform__form-field::-webkit-input-placeholder {
+  font-weight: 600;
+  color: #a9a9a9;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.userform__form__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.userform__form__item {
+  position: relative;
+}
+
+.userform__form__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.userform__form__item-label {
+  display: flex;
+  cursor: pointer;
+}
+
+.userform__form__item-label:hover {
+  opacity: 0.6;
+}
+
+.userform__form__item-label:active {
+  opacity: 0.3;
+}
+
+.userform__form__item-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: #F8F8F8;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.userform__form__item-input[type="radio"]:checked + .userform__form__item-mark::after {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  content: "";
+}
+
+.userform__form__item-input[type="radio"]:checked + .userform__form__item-mark::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 32px;
+  height: 32px;
+  background: #7d98f6;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  content: "";
+}
+
+.userform__form__item-text {
+  font-weight: 400;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 48px;
+}
+
+.userform__form__form-submit {
+  margin-left: 182px;
+  background: #7d98f6;
+  border-radius: 25px;
+  border: none;
+  width: 218px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.userform__form__form-submit:hover {
+  opacity: 0.6;
+}
+
+.userform__form__form-submit:active {
+  opacity: 0.3;
+}
+
+.userform__form__form-submit-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
