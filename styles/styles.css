@@ -52,32 +52,94 @@ body {
 }
 
 .userform {
-  margin-left: 112px;
-  margin-top: 112px;
-  position: relative;
+  margin: 112px 30px;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 960px) {
+  .userform {
+    margin: 112px 60px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .userform {
+    margin: 112px 112px;
+  }
+}
+
+.userform__avatar-wrapper {
+  position: relative;
+  margin-bottom: 70px;
 }
 
 .userform__text {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   padding: 0;
-  position: absolute;
   font-weight: 700;
-  font-size: 88px;
-  line-height: 96px;
+  font-size: 55px;
+  line-height: 66px;
   color: #7D98F7;
+  text-align: center;
+  margin-top: -133px;
   transform: rotate(-45deg);
-  margin-top: 234px;
-  margin-left: 155px;
+  margin-left: 54px;
+}
+
+@media (min-width: 960px) {
+  .userform__text {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 76px;
+    line-height: 84px;
+    top: 250px;
+    left: 80px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .userform__text{
+    font-size: 88px;
+    line-height: 96px;
+    top: 234px;
+    left: 155px;
+  }
 }
 
 .userform__avatar {
-  margin-right: 176px;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 960px) {
+  .userform__avatar {
+    margin: 0;
+    margin-bottom: 40px;
+    margin-right: 52px;
+
+  }
+}
+
+@media (min-width: 1440px) {
+  .userform__avatar {
+    margin-right: 176px;
+  }
 }
 
 .userform__form {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .userform__form__form-wrapper {
@@ -208,13 +270,19 @@ body {
 }
 
 .userform__form__form-submit {
-  margin-left: 182px;
+  margin: 0 auto;
   background: #7d98f6;
   border-radius: 25px;
   border: none;
   width: 218px;
   height: 56px;
   cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  .userform__form__form-submit {
+    margin-left: 182px;
+  }
 }
 
 .userform__form__form-submit:hover {

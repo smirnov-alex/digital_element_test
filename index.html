@@ -3,48 +3,57 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Digital Element. Test.</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <section class="userform">
-    <img class="userform__avatar" src="img/photo.png" width="400" height="547" alt="Фото пользователя">
-    <p class="userform__text">Hello <br> my friend</p>
-    <form class="userform__form" action="" method="get">
-      <div class="userform__form__form-wrapper">
-        <label class="userform__form-label" for="name">Ваше имя</label>
-        <input class="userform__form-field" placeholder="Имя" type="text" name="name" id="name" required>
+  <main class="page-main">
+    <section class="userform">
+      <h2 class="visually-hidden">Форма авторизации</h2>
+      <div class="userform__avatar-wrapper">
+        <img class="userform__avatar" src="img/photo.png" width="400" alt="Фото пользователя">
+        <span class="userform__text">Hello <br> my friend</span>
       </div>
-      <div class="userform__form__form-wrapper">
-        <label class="userform__form-label" for="phone">Телефон</label>
-        <input class="userform__form-field" placeholder="Номер телефона" type="tel" name="phone" id="phone" required>
-      </div>
-      <div class="userform__form__form-wrapper">
-        <label class="userform__form-label" for="password">Пароль</label>
-        <input class="userform__form-field" placeholder="• • • • • •" type="password" name="password" id="password" required>
-      </div>
-      <ul class="userform__form__list">
-        <li class="userform__form__item">
-          <label class="userform__form__item-label">
-            <input class="userform__form__item-input visually-hidden" type="radio" name="love_work" value="yes">
-            <span class="userform__form__item-mark"></span>
-            <span class="userform__form__item-text">Люблю свою работу</span>
-          </label>
-        </li>
-        <li class="userform__form__item">
-          <label class="userform__form__item-label">
-            <input class="userform__form__item-input visually-hidden" type="radio" name="love_work" value="so_much" checked>
-            <span class="userform__form__item-mark"></span>
-            <span class="userform__form__item-text">Очень люблю свою работу</span>
-          </label>
-        </li>
-      </ul>
-      <button class="userform__form__form-submit" type="submit">
-        <span class="userform__form__form-submit-text">Отправить анкету</span>
-      </button>
-    </form>
-  </section>
+      <form class="userform__form" novalidate action="" method="get">
+        <div class="userform__form__form-wrapper">
+          <label class="userform__form-label" for="name">Ваше имя</label>
+          <input class="userform__form-field" placeholder="Имя" type="text" name="name" id="name" required>
+        </div>
+        <div class="userform__form__form-wrapper">
+          <label class="userform__form-label" for="phone">Телефон</label>
+          <input class="userform__form-field" placeholder="Номер телефона" type="tel" name="phone" id="phone" required>
+        </div>
+        <div class="userform__form__form-wrapper">
+          <label class="userform__form-label" for="password">Пароль</label>
+          <input class="userform__form-field" placeholder="• • • • • •" type="password" name="password" id="password"
+            required>
+        </div>
+        <ul class="userform__form__list">
+          <li class="userform__form__item">
+            <label class="userform__form__item-label">
+              <input class="userform__form__item-input visually-hidden" type="radio" name="love_work" value="yes">
+              <span class="userform__form__item-mark"></span>
+              <span class="userform__form__item-text">Люблю свою работу</span>
+            </label>
+          </li>
+          <li class="userform__form__item">
+            <label class="userform__form__item-label">
+              <input class="userform__form__item-input visually-hidden" type="radio" name="love_work" value="so_much"
+                checked>
+              <span class="userform__form__item-mark"></span>
+              <span class="userform__form__item-text">Очень люблю свою работу</span>
+            </label>
+          </li>
+        </ul>
+        <button class="userform__form__form-submit" type="submit">
+          <span class="userform__form__form-submit-text">Отправить анкету</span>
+        </button>
+      </form>
+    </section>
+  </main>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
